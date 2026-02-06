@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite'
-import viteImagemin from 'vite-plugin-imagemin'
-import { resolve } from 'path' 
+import { defineConfig } from "vite";
+import viteImagemin from "vite-plugin-imagemin";
+import { resolve } from "path";
 
 export default defineConfig({
+  base: "/Uppgift-1-Frontendbaserad-webbutveckling/",
   plugins: [
     viteImagemin.default({
       mozjpeg: {
@@ -19,10 +20,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        bilder: resolve(__dirname, 'src/sidor/bilder.html'),
-        process: resolve(__dirname, 'src/sidor/processer.html'),
+        main: resolve(__dirname, "index.html"),
+        bilder: resolve(__dirname, "src/sidor/bilder.html"),
+        process: resolve(__dirname, "src/sidor/processer.html"),
       },
     },
   },
-})
+});
