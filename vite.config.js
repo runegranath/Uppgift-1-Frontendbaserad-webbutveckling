@@ -20,8 +20,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        bilder: resolve(__dirname, 'sidor/bilder.html'),
-        process: resolve(__dirname, 'sidor/process.html'),
+        bilder: resolve(__dirname, 'src/sidor/bilder.html'),
+        process: resolve(__dirname, 'src/sidor/processer.html'),
       },
     },
   },
