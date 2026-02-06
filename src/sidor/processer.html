@@ -39,10 +39,13 @@
                 att undvika onödiga filer laddas upp.</p>
             <p>För att javascript skulle följa med i publiceringen och optimeras med vite behövde "script type="module""
                 läggas till i HTML.</p>
-            <p>Innan publiceringen skapade jag en mapp som hette .github/workflows/ och i den deploy.yml för att
-                automatisera publiceringen till GitHub Pages.</p>
-            <p>När jag sedan ville publicera webbplatsen använde jag kommandot npm run build. Detta skapar en mapp med
-                namnet "dist" som innehåller alla filer som behövs för att publicera webbplatsen. All CSS och Javascript
+            <p>Innan publiceringen installerade jag GitHub Actions extension och skapade en mapp som hette
+                .github/workflows/ och i den en fil deploy.yml med instruktioner hur den ska automatisera publiceringen
+                till GitHub Pages.</p>
+            <p>När jag sedan ville publicera webbplatsen la jag till alla filer, commitade och pushade via git som då
+                själv kör npm install och npm build. Detta skapar en mapp med
+                namnet "dist" som innehåller alla filer som behövs för att publicera webbplatsen. All CSS, alla bilder
+                och Javascript
                 blir då också optimerad.</p>
         </section>
 
