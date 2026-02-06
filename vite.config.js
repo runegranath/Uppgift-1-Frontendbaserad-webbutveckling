@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import viteImagemin from 'vite-plugin-imagemin'
+import { resolve } from 'path' 
 
 export default defineConfig({
   plugins: [
-    viteImagemin({
+    viteImagemin.default({
       mozjpeg: {
         quality: 75,
       },
@@ -15,4 +16,13 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        bilder: resolve(__dirname, 'sidor/bilder.html'),
+        process: resolve(__dirname, 'sidor/process.html'),
+      },
+    },
+  },
 })

@@ -42,11 +42,15 @@
             <p>Innan publiceringen installerade jag GitHub Actions extension och skapade en mapp som hette
                 .github/workflows/ och i den en fil deploy.yml med instruktioner hur den ska automatisera publiceringen
                 till GitHub Pages.</p>
+            <p>För att optimeringen av bilder skulle fungera behövdes inställningarna för vites plugin vara
+                konfigurerade i vite.config.js. Där specificerades också "rollupOptions" för att få med fler undersidor
+                än bara index.html.</p>
             <p>När jag sedan ville publicera webbplatsen la jag till alla filer, commitade och pushade via git som då
                 själv kör npm install och npm build. Detta skapar en mapp med
                 namnet "dist" som innehåller alla filer som behövs för att publicera webbplatsen. All CSS, alla bilder
                 och Javascript
                 blir då också optimerad.</p>
+
         </section>
 
     </main>
