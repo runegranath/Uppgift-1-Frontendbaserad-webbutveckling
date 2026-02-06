@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift 1 - Frontendbaserad utveckling</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Uppgift 1 - Frontendbaserad utveckling</h1>
+        <nav>
+            <a href="../../index.html">Hem</a>
+            <a href="bilder.html">Bilder</a>
+            <a href="processer.html">Process</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Processer</h2>
+            <p>I denna uppgift har vi utöver HTML, CSS och javascript använt NodeJS och Vite som byggverktyg för att
+                automatisera
+                utvecklingsmiljön. Arbetet började med att använda <em>npm init</em> i terminalen för att skapa en
+                .json-fil som
+                kan konfigureras. När sedan jag använder kommandot <em>npm run dev</em> i terminalen startas en
+                utvecklingsserver
+                där
+                ändringar som görs direkt uppdateras i webbläsarfönstret.</p>
+            <p>För att sedan lägga till Sharp som
+                bildoptimerare i projektet användes ett Sharp-plugin till Vite genom att skriva <em>npm install
+                    vite-plugin-imagemin sharp --save-dev.</em></p>
+            <p>Git har använts för att versionshantera koden och node_modules-mappen är exkluderad i publiceringen för
+                att undvika onödiga filer laddas upp.</p>
+            <p>När jag sedan ville publicera webbplatsen använde jag kommandot npm run build. Detta skapar en mapp med
+                namnet "dist" som innehåller alla filer som behövs för att publicera webbplatsen. All CSS och Javascript
+                blir då också optimerad.</p>
+        </section>
+
+    </main>
+
+    <footer>RG 2026</footer>
+
+</body>
+
+</html>
